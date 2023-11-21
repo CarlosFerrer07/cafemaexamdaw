@@ -21,7 +21,7 @@ El proyecto contiene los siguientes elementos en la raíz:
 
 - **Directorios:**
   - `config`: Contiene el archivo `dba.json` para la conexión a la base de datos desde el index.
-  - `db`: Contiene la creación de la base de datos.
+  - `db`: Contiene la creación de la base de datos OJO HAY QUE BUSCAR LA IP CON EL NOMBRE DEL CONTENEDOR Y SUSTITUIRLA EN EL dba.json donde pone host (no sabia hacerlo de manera que no lo tengamos que cambiar).
 
 ## Levantar el Servicio
 
