@@ -1,0 +1,46 @@
+version: "3"
+services:
+    database:
+        build:
+            context: .
+            dockerfile: Dockerfile-bd
+        ports:
+            - 3306:3306
+        command: --default-authentication-plugin=mysql_native_password 
+        environment:
+            MYSQL_DATABASE: db
+            MYSQL_PASSWORD: root
+            MYSQL_ROOT_PASSWORD: root
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+        networks:
+            - default
+
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile-web
+        ports:
+            - 80:80
+        volumes:
+            - .:/var/www/html
+        networks:
+            - default
+
+    adminphp:
+        build:
+            context: .
+            dockerfile: Dockerfile-admin
+        ports:
+            - 8000:80
+        environment:
+            MYSQL_USER: carlos
+            MYSQL_PASSWORD: root
+            MYSQL_ROOT_PASSWORD: root
+        networks:
+            - default
+
+networks:
+    default:
+
+
