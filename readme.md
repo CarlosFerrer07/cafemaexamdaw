@@ -1,9 +1,32 @@
-CARLOS FERRER
-DE LOKKOS
-Para levantar el servicio en primer lugar nos descargamos la carpeta comprimida, en ella veremos en raiz 3 dockerfile un index.php un y un docker-compose.yml, ademas de unos directorios llamados config donde tenemos el dba.json que usaremos para conectarnos a la base de datos en el index y un directorio db con la creacion de una base de datos.
+# Levantar el Servicio - Carlos Ferrer de Lokkos
 
-Una vez situados lo que hacemos será abrir docker y luego en la carpeta de nuestro proyecto levantamos una terminal y lanzamos el comando docker-compose up --build, ya está todo configurado para que con solo este comando te lo levante de manera correcta, comprobamos que los contenedores estén en verde. 
+Para poner en marcha el servicio, sigue estos pasos simples:
 
-Luego nos vamos a nuestro navegador y ponemos localhost, nos debería de salir mi nombre, edad y estilo y el tuyo.
+## Descarga del Proyecto
 
-Y ya estaría.
+1. Descarga la carpeta comprimida del proyecto desde [enlace al proyecto].
+
+## Estructura del Proyecto
+
+El proyecto contiene los siguientes elementos en la raíz:
+
+- **Dockerfiles:**
+  - `Dockerfile-admin`
+  - `Dockerfile-bd`
+  - `Dockerfile-web`
+
+- **Archivos:**
+  - `index.php`
+  - `docker-compose.yml`
+
+- **Directorios:**
+  - `config`: Contiene el archivo `dba.json` para la conexión a la base de datos desde el index.
+  - `db`: Contiene la creación de la base de datos.
+
+## Levantar el Servicio
+
+1. Abre Docker.
+2. Sitúate en la carpeta de tu proyecto en visual studio.
+3. Abre una terminal y ejecuta el siguiente comando:
+   ```bash
+   docker-compose up --build
