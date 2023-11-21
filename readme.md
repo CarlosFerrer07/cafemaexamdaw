@@ -4,7 +4,7 @@ Para poner en marcha el servicio, sigue estos pasos simples:
 
 ## Descarga del Proyecto
 
-1. Descarga la carpeta comprimida del proyecto desde [enlace al proyecto].
+1. Descarga la carpeta comprimida del proyecto desde https://github.com/CarlosFerrer07/cafemaexamdaw.
 
 ## Estructura del Proyecto
 
