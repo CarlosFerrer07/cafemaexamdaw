@@ -20,8 +20,8 @@ El proyecto contiene los siguientes elementos en la raíz:
   - `docker-compose.yml`
 
 - **Directorios:**
-  - `config`: Contiene el archivo `dba.json` para la conexión a la base de datos desde el index.
-  - `db`: Contiene la creación de la base de datos OJO HAY QUE BUSCAR LA IP CON EL NOMBRE DEL CONTENEDOR y DOCKER INSPECT DE LA BASE DE DATOS Y SUSTITUIRLA EN EL dba.json donde pone host (no sabia hacerlo de manera que no lo tengamos que cambiar).
+  - `config`: Contiene el archivo `dba.json` para la conexión a la base de datos desde el index OJO HAY QUE BUSCAR LA IP CON EL NOMBRE DEL CONTENEDOR y DOCKER INSPECT DE LA BASE DE DATOS Y SUSTITUIRLA EN EL dba.json donde pone host (no sabia hacerlo de manera que no lo tengamos que cambiar)..
+  - `db`: Contiene la creación de la base de datos.
 
 ## Levantar el Servicio
 
@@ -30,3 +30,4 @@ El proyecto contiene los siguientes elementos en la raíz:
 3. Abre una terminal y ejecuta el siguiente comando:
    ```bash
    docker-compose up --build
+4. Pon localhost en tu navegador
